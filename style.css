@@ -1,0 +1,159 @@
+
+/* common and reset code start here */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Edu NSW ACT Foundation",sans-serif;
+   
+    /* font-size: 57.5%; */
+    
+}
+body{
+    background-color: rgb(227, 221, 219);
+    max-width: 100%;
+    margin: auto;
+}
+.text-justfiy{
+    text-align: justify;
+
+}
+img{
+    width: 100%;
+    height: auto;
+}
+:root{
+    --padding: 1rem;
+    --text-color: white;
+    --text-color: black;
+    --box-shadow: .3rem .3rem .6rem , -.3rem 0rem .6rem;
+}
+.nav__list a{
+    color: black;
+}
+/* common and reset code end here */
+
+/* nav section start here */
+
+ #nav-section{
+    background-color: white;
+    box-shadow: .3rem .3rem .3rem #a49f9f , -.3rem -.3rem 3rem #a49f9f;
+ }
+
+ .nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+ }
+
+ .main-logo{
+    color: rgb(74, 148, 163);
+    
+ }
+ .manu-terget{
+    color: rgb(74, 148, 163);
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: none;
+    margin-left: 80vw;
+ }
+ .manu-terget:hover{
+    color: rgb(98, 92, 92);
+    transition: all .6s linear;
+    transform: rotate(90deg);
+ }
+ .nav__link{
+    color: rgb(71, 68, 68);
+    
+    margin: .6rem;
+ }
+ .nav__link:hover{
+    padding-left: 1.2rem;
+    color: rgb(74, 148, 163);
+ }
+
+
+ .nav__icon{
+    color: rgb(71, 68, 68);
+    text-transform: uppercase;
+    margin: .6rem;
+ }
+ .nav__icon:hover{
+    padding-left: 1.2rem;
+    color: rgb(74, 148, 163);
+ }
+
+
+ /* .nav__ul{
+    height: 0;
+    overflow: hidden;
+ } */
+
+ .nav__ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+ }
+ .nav__links,.nav-icons{
+    display: flex;
+ }
+
+ .nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+
+/* nav section end here */
+
+
+/* responsive start here */
+
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media  (max-width:768px) {
+    .manu-terget{
+        display: block;
+    }
+
+    .nav__ul{
+    height: 0;
+    overflow: hidden;
+    gap: 5vw;
+ }
+
+ .nav-center, .nav__links, .nav-icons{
+    flex-direction: column;
+ }
+
+ .show__ul{
+    height: auto;
+ }
+
+
+
+}
+
+@media screen and (max-width:660px) {
+    
+}
+
+
+/* responsive end here */
+
+
+
